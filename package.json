@@ -1,25 +1,30 @@
 {
-  "name": "habit-plotter",
-  "version": "1.0.0",
-  "description": "🌱 Small steps, big patterns — track and grow.",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "next dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yangclima/habit-plotter.git"
-  },
-  "author": "yangclima",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yangclima/habit-plotter/issues"
-  },
-  "homepage": "https://github.com/yangclima/habit-plotter#readme",
-  "dependencies": {
-    "next": "^15.3.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  }
+    "name": "habit-plotter",
+    "version": "1.0.0",
+    "description": "🌱 Small steps, big patterns — track and grow.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "next dev",
+        "lint:prettier:check": "prettier --check .",
+        "lint:prettier:fix": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yangclima/habit-plotter.git"
+    },
+    "author": "yangclima",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yangclima/habit-plotter/issues"
+    },
+    "homepage": "https://github.com/yangclima/habit-plotter#readme",
+    "dependencies": {
+        "next": "^15.3.2",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.5.3"
+    }
 }

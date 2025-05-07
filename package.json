@@ -8,7 +8,18 @@
         "dev": "next dev",
         "lint:prettier:check": "prettier --check .",
         "lint:prettier:fix": "prettier --write .",
-        "lint:eslint:check": "next lint"
+        "lint:eslint:check": "next lint",
+        "prepare": "husky",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md}": [
+            "prettier --write"
+        ]
     },
     "repository": {
         "type": "git",
@@ -26,10 +37,14 @@
         "react-dom": "^19.1.0"
     },
     "devDependencies": {
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
         "eslint": "9.26.0",
         "eslint-config-next": "15.3.2",
         "eslint-config-prettier": "^10.1.2",
         "eslint-plugin-prettier": "^5.4.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.2",
         "prettier": "^3.5.3"
     }
 }

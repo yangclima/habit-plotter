@@ -27,7 +27,7 @@
         "url": "git+https://github.com/yangclima/habit-plotter.git"
     },
     "author": "yangclima",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/yangclima/habit-plotter/issues"
     },

@@ -26,9 +26,9 @@ python main.py
 ```
 
 2. Na interface do aplicativo:
-    - Adicione novos hábitos usando o botão "Adicionar Hábito"
-    - Registre suas atividades diárias clicando nos dias correspondentes
-    - Visualize seus progressos através dos gráficos gerados automaticamente
+   - Adicione novos hábitos usando o botão "Adicionar Hábito"
+   - Registre suas atividades diárias clicando nos dias correspondentes
+   - Visualize seus progressos através dos gráficos gerados automaticamente
 
 ## Funcionalidades
 

@@ -1,57 +1,60 @@
 {
-    "name": "habit-plotter",
-    "version": "1.0.0",
-    "description": "🌱 Small steps, big patterns — track and grow.",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-        "commit": "cz",
-        "dev": "next dev",
-        "lint:prettier:check": "prettier --check .",
-        "lint:prettier:fix": "prettier --write .",
-        "lint:eslint:check": "next lint",
-        "prepare": "husky",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx}": [
-            "eslint --fix",
-            "prettier --write"
-        ],
-        "*.{json,md}": [
-            "prettier --write"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/yangclima/habit-plotter.git"
-    },
-    "author": "yangclima",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/yangclima/habit-plotter/issues"
-    },
-    "homepage": "https://github.com/yangclima/habit-plotter#readme",
-    "dependencies": {
-        "next": "^15.3.2",
-        "react": "^19.1.0",
-        "react-dom": "^19.1.0"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^19.8.0",
-        "@commitlint/config-conventional": "^19.8.0",
-        "commitizen": "^4.3.1",
-        "eslint": "9.26.0",
-        "eslint-config-next": "15.3.2",
-        "eslint-config-prettier": "^10.1.2",
-        "eslint-plugin-prettier": "^5.4.0",
-        "husky": "^9.1.7",
-        "lint-staged": "^15.5.2",
-        "prettier": "^3.5.3"
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
+  "name": "habit-plotter",
+  "version": "1.0.0",
+  "description": "🌱 Small steps, big patterns — track and grow.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "commit": "cz",
+    "dev": "next dev",
+    "lint:prettier:check": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "lint:eslint:check": "next lint",
+    "prepare": "husky",
+    "services:down": "docker compose -f infra/compose.yaml down",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangclima/habit-plotter.git"
+  },
+  "author": "yangclima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangclima/habit-plotter/issues"
+  },
+  "homepage": "https://github.com/yangclima/habit-plotter#readme",
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "commitizen": "^4.3.1",
+    "eslint": "9.26.0",
+    "eslint-config-next": "15.3.2",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
+  }
 }
